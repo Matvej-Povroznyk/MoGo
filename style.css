@@ -1,0 +1,190 @@
+:root {
+  --accent-color: #95e1d3;
+  --hover-color: #f38181;
+  --text-color: #b6b6b6;
+  --black: #333;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.46;
+  color: var(--text-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.is-hidden {
+  display: none;
+}
+.container {
+  width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* outline: solid gold;*/
+}
+.header {
+  margin-bottom: 68px;
+  margin-top: 17px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  color: var(--accent-color);
+}
+.nav-list {
+  display: flex;
+  gap: 55px; /*створює однаковий вудступ між дітьми*/
+}
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--accent-color);
+  line-height: 100%;
+}
+.nav-link:hover {
+  color: var(--hover-color);
+}
+
+.section-pre-title {
+  font-family: "Kaushan Script", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 110px;
+}
+.services {
+  margin-bottom: 100px;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services-item {
+  margin-right: 70px;
+  margin-bottom: 100px;
+  width: 332px;
+}
+.services-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.services-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.services h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.section-text {
+  margin-bottom: 27px;
+}
+.team {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+.team-name {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--black);
+}
+.team-profession {
+  font-weight: 300;
+  font-style: italic;
+}
+.footer {
+  border-top: 1px solid var(--text-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Montserrat";
+
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--black);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer a {
+  color: var(--hover-color);
+}
+.footer-input {
+  padding: 12px 10px;
+  background-color: #fff;
+  width: 230px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--text-color);
+  border: 1px solid #b6b6b6;
+}
+.footer-btn {
+  display: inline-block;
+  padding: 12px 38px;
+
+  color: #fff;
+  background-color: var(--accent-color);
+  border-color: transparent;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.alarm,
+.graph,
+.digital,
+.display,
+.home,
+.paper {
+  display: block;
+  width: 37;
+  height: 37px;
+  fill: #95E1D3
+}
